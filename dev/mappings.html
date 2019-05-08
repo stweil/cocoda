@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Mapping Search</title><link href=./css/bootstrap.css rel=stylesheet><link href=./css/bootstrap-vue.css rel=stylesheet><link href=css/chunk-common.2da5bf98.css rel=preload as=style><link href=css/chunk-vendors.21a4730d.css rel=preload as=style><link href=css/mappingsApp.c70270f8.css rel=preload as=style><link href=js/chunk-common.5ef3825b.js rel=modulepreload as=script><link href=js/chunk-vendors.99fd771d.js rel=modulepreload as=script><link href=js/mappingsApp.4d762eca.js rel=modulepreload as=script><link href=css/chunk-vendors.21a4730d.css rel=stylesheet><link href=css/chunk-common.2da5bf98.css rel=stylesheet><link href=css/mappingsApp.c70270f8.css rel=stylesheet></head><body><noscript><div style="text-align: center"><br><br><br><br><h1>Sorry!</h1><p>This application does not work in your browser.</p><p>To use this application, JavaScript is required to be enabled. You'll also need a modern web browser, like <a href=https://www.google.com/chrome/ target=_blank>Google Chrome</a>, <a href=https://www.mozilla.org/en-US/firefox/new/ target=_blank>Firefox</a>, or <a href=https://www.microsoft.com/en-us/windows/microsoft-edge target=_blank>Microsoft Edge</a>.</p><br><br><p>Thank you for understanding.</p><p><a href=https://coli-conc.gbv.de target=_blank>- the coli-conc team</a></p><br><br><p>If you think this is a bug, please create an issue in the <a href=https://github.com/gbv/cocoda/issues target=_blank>Cocoda GitHub repository</a>.</p></div></noscript><div id=mappingsApp></div><script>// from https://gomakethings.com/decoding-html-entities-with-vanilla-javascript/
+      var decodeHTML = function (html) {
+        var txt = document.createElement("textarea")
+        txt.innerHTML = html
+        return txt.value
+      }
+      // from https://stackoverflow.com/a/40852845
+      function isIE() {
+        var myNav = navigator.userAgent.toLowerCase()
+        return (myNav.indexOf("msie") != -1 || myNav.indexOf("trident") != -1) ? true : false
+      }
+      // Show noscript content for IE as well
+      if (isIE()) {
+        var noscript = document.getElementsByTagName("noscript")[0]
+        var app = document.getElementById("app")
+        app.innerHTML = decodeHTML(noscript.innerHTML)
+      }</script><script type=module src=js/chunk-vendors.99fd771d.js></script><script type=module src=js/chunk-common.5ef3825b.js></script><script type=module src=js/mappingsApp.4d762eca.js></script><script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script><script src=js/chunk-vendors-legacy.99fd771d.js nomodule></script><script src=js/chunk-common-legacy.b9041ad5.js nomodule></script><script src=js/mappingsApp-legacy.d9bf193d.js nomodule></script></body></html>
